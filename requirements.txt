@@ -1,0 +1,15 @@
+# Core
+pandas
+pyarrow   #for Parquet support
+
+# Google Cloud BigQuery client
+google-cloud-bigquery
+google-cloud-storage
+
+# Optional: for authentication via service accounts
+google-auth
+google-auth-oauthlib
+
+# Visualization (optional, if you plan to plot query results)
+matplotlib
+
