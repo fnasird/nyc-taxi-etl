@@ -8,9 +8,7 @@ The pipeline extracts raw taxi trip data, transforms and cleans it, then loads i
 ## Tech Stack
 - **Python** (Pandas, SQLAlchemy)  
 - **PostgreSQL** (relational database)  
-- **Google BigQuery** (cloud warehouse option)  
-- **Airflow** (optional – for scheduling)  
-- **Docker** (optional – for containerization)  
+- **Google BigQuery** (cloud warehouse option)   
 
 ---
 
@@ -40,10 +38,10 @@ nyc-taxi-etl/
 
 ---
 
-## How to Run (Local Setup)
+## How to Run (Local Setup(PostgreSQL))
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/nyc-taxi-etl.git
+   git clone https://github.com/fnasird/nyc-taxi-etl.git
    cd nyc-taxi-etl
 
 2. Install dependencies:
@@ -59,6 +57,25 @@ nyc-taxi-etl/
 5. Query results with:
    ```bash
    psql -d nyc_taxi -f sql/queries.sql
+
+## How to Run (BigQuery) 
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/fnasird/nyc-taxi-etl.git
+   cd nyc-taxi-etl
+2. **Create a BigQuery dataset:**
+- Open BigQuery Console.
+- Create a new dataset called nyc_taxi_data.
+
+3. **Load the data:**
+- Upload taxi_zone_lookup.csv into a table named zones.
+- Upload yellow_tripdata_2024-01.parquet (or another month) into a table named trips
+
+4. **Run queries in BigQuery:**
+- Open the BigQuery SQL editor.
+- Copy queries from sql/queries.sql.
+- Run them directly against your nyc_taxi.trips and nyc_taxi.zones tables.
 
 ## Pipeline Diagram
 
