@@ -79,4 +79,4 @@ nyc-taxi-etl/
 
 ## Pipeline Diagram
 
-![ETL Pipeline](images/nyc_taxi_etl_pipeline.png)
+![ETL Pipeline](images/nyc_taxi_etl_pipeline_bigquery.png)
