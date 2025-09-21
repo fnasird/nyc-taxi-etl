@@ -77,6 +77,14 @@ nyc-taxi-etl/
 - Copy queries from sql/queries.sql.
 - Run them directly against your nyc_taxi.trips and nyc_taxi.zones tables.
 
+**Preview**
+![Table 1](images/busiest_hours.png)
+
+![Table 2](images/daily_revenue.png)
+
+![Table 3](images/top_boroughs.png)
+
+
 ## Pipeline Diagram
 
 ![ETL Pipeline](images/nyc_taxi_etl_pipeline_bigquery.png)
