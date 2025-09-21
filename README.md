@@ -59,3 +59,7 @@ nyc-taxi-etl/
 5. Query results with:
    ```bash
    psql -d nyc_taxi -f sql/queries.sql
+
+## Pipeline Diagram
+
+![ETL Pipeline](nyc_taxi_etl_pipeline.png)
